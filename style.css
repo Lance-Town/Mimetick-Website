@@ -1,0 +1,321 @@
+:root {
+    /* Primary Color */
+    --clr-primary: #D8DBE2;
+
+    /* Secondary Color */
+    --clr-secondary: #A9BCD0;
+
+    /* Accent Color */
+    --clr-accentTurquoise: #58A4B0;
+
+    /* Navy Blue Color */
+    --clr-navyBlue: #373F51;
+
+    /* Background Color */
+    --clr-backgroundColor: #1b1b1e;
+    
+    /* Text Colors */
+    --clr-titleText: #ffffff;
+    --clr-subtext: #cccccc;
+  }
+
+* {
+    font-family: 'Inter';
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    background-color: var(--clr-backgroundColor);
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--clr-backgroundColor);
+}
+
+/* Navigation Bar classes */
+.navBar {
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+
+    height:50px;
+    padding: 2.43056vw 0 1.415023vw 0;
+    overflow: hidden;
+    background-color: var(--clr-backgroundColor);
+    z-index: 100;
+}
+
+.navLogo {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 50px;
+    gap: 4px;
+
+    /* allows it to move based on view width */
+    padding-left: 2.77778vw;
+}
+
+.navLogoImg {
+    order: 1;
+    /* background-color: inherit; */
+
+    /* size of logo */
+    width: 50px;
+    height: 50px;
+}
+
+.navLogoText {
+    order: 2;
+    /* color of text and background */
+    color: var(--clr-accentTurquoise);
+
+    /* font */
+    font-weight: bold;
+    
+    /* centers Mimetick text next to logo */
+    display: flex;
+    align-items: center;
+
+    font-size: 1rem;
+}
+
+.navShare{
+    height: 50px;
+    width: 60px;
+    margin-right: 2.77778vw;
+
+    font-size: 1rem;
+}
+
+.navShare a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 60px;
+    color: #fff;
+}
+
+/* injected into HTML with JS to make sticky navbar */
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+/* prevents sudden jerking around */
+/* .sticky + .signupSheet {
+    padding-top: 11%;
+} */
+
+@media screen and (max-width: 400px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
+/* mobile */
+@media screen and (min-width: 400px){
+    :root {
+        font-size: 16px;
+    }
+}
+
+/* mid-large mobile devices */
+@media screen and (min-width: 600px) {
+    :root {
+        font-size: 18px;
+    }
+}
+
+/* web devices */
+@media screen and (min-width: 719px) {
+    :root {
+        font-size: 20px;
+    }
+}
+
+.signupSheet {
+
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 30fr 10fr 10fr;
+
+    /* dimensions */
+    height: 400px;
+    width: 100%;
+}
+
+.signupTitle {
+    color: var(--clr-primary);
+    margin: 2% 5% 0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    text-align: center;
+    font-size: 3.313rem;
+}
+
+.signupSubTitle {
+    margin: 0% 5%;
+    text-align: center;
+    color: var(--clr-secondary);
+
+    font-size: 1rem;
+}
+
+.singupEmail {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emailInput {
+    width: 63.33vw;
+    height: 20px;
+    border-style: none none solid none;
+    border-color: #303034;
+    color: #515154;
+    background-color: inherit;
+}
+
+.submitBtn {
+    border: none;
+}
+
+.newCreatorContainer {
+    height: auto;
+    background: rgba(27, 27, 30, 0.90);
+    color: #FFF;
+    margin: 22vw 2rem 0 6.64vw;
+}
+
+.newCreatorTitle, .affiliateTitle {
+    font-size: 2.1rem;
+    letter-spacing: 0.4095rem;
+}
+
+.newCreatorSubTitle, .connectionSubTitle {
+    margin-top: 0.625rem;
+    color: #cccccc;
+}
+
+.connectionTitle {
+    font-size: 1.875rem;
+    letter-spacing: 0.36563rem;
+    margin-top: 50px;
+}
+
+.creatorContainer {
+
+    background-image: url(images/yellowLedge.png);
+    background-repeat: no-repeat;
+    background-color: var(--clr-backgroundColor);
+
+
+    width: 100vw;
+    max-height: 44rem;
+    color: #FFF;
+}
+
+.creatorTextContainer {
+    padding: 2.6875rem 2rem 0 6.64vw;
+    margin-top: 8rem;
+    background: rgba(27, 27, 30, 0.90);
+    
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.creatorTitle {
+    font-size: 2.1rem;
+    letter-spacing: 0.4095rem;
+    background-color: transparent;
+}
+
+.creatorPointOne, .creatorPointTwo, .creatorPointThree, .affiliatePointOne, .affiliatePointTwo {
+    font-size: 1.5rem;
+    background-color: transparent;
+}
+
+.creatorPointOneSub, .creatorPointTwoSub, .creatorPointThreeSub, .affiliatePointOneSub, .affiliatePointTwoSub {
+    font-size: 1rem;
+    margin-top: 0.38rem;
+    background-color: transparent;
+    color: #cccccc;
+}
+
+.blueWaveContainer {    
+    width: 100vw;
+    max-height: 23.08225rem;;
+    margin-top: 2rem;
+}
+
+.affiliateContainer {
+    color: #FFF;
+    padding: 0 2rem 0 6.64vw;
+
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 2rem;
+}
+
+.circleContainer {
+    width: 100vw;
+    height: 13rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.redCircle {
+    width: 10rem;
+    height: 10rem;
+    background-color: #D35269;
+    border-radius: 50% 50% 22% 50%;
+    margin: 2rem 0 0 -4rem;
+    transform: rotate(20deg);
+    z-index: 2;
+}
+
+.endBlock {
+    width: 6rem;
+    height: 6rem;
+    background-color: #EDAE49;
+    border-radius: 50% 0 0 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.endBlockOne {
+    width: 4rem;
+    height: 3rem;
+    margin-top: -1rem;
+    border-radius: 50% 0 0 50%;
+    background-color: #40F99B;
+}
+
+.lastCTAContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.lastCTATitle {
+    font-size: 2.73681rem;
+    color: #FFF;
+    text-align: center;
+}
+
+.peachCircle {
+    width: 6rem;
+    height: 6rem;
+}
