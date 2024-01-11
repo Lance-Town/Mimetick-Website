@@ -298,3 +298,37 @@ body {
     align-items: flex-end;
     justify-content: flex-end;
 }
+
+.discordButtonContainer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discordButton {
+    border: none;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    border-radius: 4px;
+    color: #FFF;
+    /* background-color: var(--clr-secondary);  */
+
+}
+
+.discordLogo {
+    height: 2rem;
+    width: auto;
+    padding-right: 1rem;
+    /* background-color: var(--clr-secondary); */
+    padding: 4px 0.3rem 4px 0;
+}

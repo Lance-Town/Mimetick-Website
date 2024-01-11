@@ -32,3 +32,7 @@ window.addEventListener("load", function() {
   });
 });
 
+function joinDiscord() {
+  // Replace the URL with your Discord invite link
+  window.location.href = "https://discord.gg/2ABqCm8xS5";
+}
