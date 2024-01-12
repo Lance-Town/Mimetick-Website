@@ -68,7 +68,7 @@ body {
 .navLogoText {
     order: 2;
     /* color of text and background */
-    color: var(--clr-accentTurquoise);
+    color: #fff;
 
     /* font */
     font-weight: bold;
